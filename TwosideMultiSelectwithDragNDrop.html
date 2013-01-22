@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>
+			TwosidedMultiSelect
+		</title>
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="./js/TwoSidedMultiSelectwithDragNDrop.js"></script>
+		<link rel="stylesheet" href="./css/TwoSidedMultiSelectwithDragNDrop.css" />
+		<script>
+		/*Here we are passing 2 arrays for left and right list of apps, 
+		moveOptions as true implies that we have up/down arows for second list 
+		maxSelected as 10 implies that the maximum number of apps that can be placed in second list is 10*/
+		$(function() {
+			var availableApps = [{'Id':'1', 'Value':'App1'},{'Id':'2', 'Value':'App2'},{'Id':'3', 'Value':'App3'},{'Id':'4', 'Value':'App4'},{'Id':'5', 'Value':'App5'},{'Id':'6', 'Value':'App6'},{'Id':'7', 'Value':'App7'},{'Id':'8', 'Value':'App8'},{'Id':'9', 'Value':'App9'}];
+			var selectedApps = [{'Id':'11', 'Value':'App11'},{'Id':'12', 'Value':'App12'},{'Id':'13', 'Value':'App13'},{'Id':'14', 'Value':'App14'},{'Id':'15', 'Value':'App15'},{'Id':'16', 'Value':'App16'},{'Id':'17', 'Value':'App17'},{'Id':'18', 'Value':'App18'},{'Id':'19', 'Value':'App19'}];
+			$( "#draggableContainer" ).multiDraggableComponent({ availableApps: availableApps, selectedApps: selectedApps, moveOptions: true, maxSelected: 10 });
+		});
+		</script>
+	</head>
+	<body>
+		<div style="height: 230px; width: 567px; margin-left: 300px; margin-top: 100px; padding: 50px 10px 40px 20px; background-color: grey;">
+			<div id="draggableContainer"></div>
+		</div>
+	</body>
+</html>
