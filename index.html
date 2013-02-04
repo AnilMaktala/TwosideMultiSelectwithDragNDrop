@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Twosidemultiselectwithdragndrop : Two sided multi select drag and drop javascript plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Twosidemultiselectwithdragndrop</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/AnilMaktala/TwosideMultiSelectwithDragNDrop">View on GitHub</a>
+
+          <h1 id="project_title">Twosidemultiselectwithdragndrop</h1>
+          <h2 id="project_tagline">Two sided multi select drag and drop javascript plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/AnilMaktala/TwosideMultiSelectwithDragNDrop/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/AnilMaktala/TwosideMultiSelectwithDragNDrop/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Description:</h2>
+
+<p>Two Sided Multi Draggable Component, as the name suggests, this component is used for dragging list of apps from one list to another in both directions.</p>
+
+<h2>Frameworks used:</h2>
+
+<ul>
+<li>jQuery JavaScript Library v1.8.3</li>
+<li>jQuery UI - v1.9.2
+##   Features present:
+Following are the features provided by this component:</li>
+<li> Drag single/Multiple apps from one list to another list.</li>
+<li> Selection of multiple list apps using ‘Ctrl+mouse click’ and ‘shift+mouse click’.</li>
+<li> Right and Left Arrow buttons to move single/multiple apps between the lists.</li>
+<li> Up and Down arrows for second list for moving the position of an app within the list.</li>
+<li> Restrict to maximum number of apps present in second list.</li>
+</ul><h2>How to integrate:</h2>
+
+<ol>
+<li> Include the .js and .css provided by this component.</li>
+<li> Create a container HTML Div element in the html file where this component is to be used. For example:
+    <div></div>
+</li>
+<li> Call the initialization method “multiDraggableComponent()” on this div with appropriate parameters. For example:
+     document.getElementById('# draggableContainer).multiDraggableComponent({ availableApps: [], selectedApps: [], moveOptions: true/false, maxSelected: Number });
+There are four parameters used while calling the method:
+a.  availableApps: This represents array of apps that should be present on the left side list of the component. This doesn’t have any maximum number of apps limit.
+b.  selectedApps: This represents array of apps that should be present on the right side list of the component. This has maximum number of apps limitation.
+c.  moveOptions: This boolean value represents the presence of Up and Down arrows that are used to move the app top or bottom in the same list.
+d.  maxSelected: This integer value represents the maximum number of apps that should be present in the second list of apps.</li>
+</ol><h2>License</h2>
+
+<p>Twosidemultiselectwithdragndrop's source code is licensed under the GNU General Public License, except for the external libraries listed below.</p>
+
+<h2>External Libraries</h2>
+
+<ul>
+<li>jQuery JavaScript Library v1.8.3</li>
+<li>jQuery UI - v1.9.2</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Twosidemultiselectwithdragndrop maintained by <a href="https://github.com/AnilMaktala">AnilMaktala</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
